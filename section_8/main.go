@@ -21,5 +21,6 @@ func main() {
 	// cannot do a = b
 	a = c // this is clearly possible
 	fmt.Println(a)
-
+	a = int(b) // we can do this because hotdog just is int
+	fmt.Println(a)
 }
