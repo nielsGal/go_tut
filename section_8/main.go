@@ -13,7 +13,7 @@ type specialInt = int
 var c specialInt
 
 func main() {
-	b = 52
+	b = 52 //assigning b can just be a normal int
 	c = 43
 	fmt.Printf("%T\n", a)
 	fmt.Printf("%T\n", b)
