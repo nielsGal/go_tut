@@ -6,9 +6,12 @@ func main() {
 	fmt.Println("bar")
 	foo()
 	for i := 0; i < 100; i++ {
-		foo()
+		if i%2 == 0 {
+			fmt.Print(i, " ")
+		}
 	}
 }
 func foo() {
-	fmt.Println("foo")
+	n, err := fmt.Println("foo")
+	fmt.Println(n, err)
 }
