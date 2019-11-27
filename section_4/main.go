@@ -9,4 +9,5 @@ func main() {
 	fmt.Println(x)
 	y := x + 24 // walrus can contain vars
 	fmt.Println(y)
+	fmt.Println(x, " ", y) //print takes any amount of any type
 }
