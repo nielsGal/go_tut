@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt" //multiple possible imports, single can be inline
+)
 
 var a int = 25 //a global cannot use the walrus (:=)
 
