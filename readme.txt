@@ -1,1 +1,1 @@
-a go lang tutorial
+the exercises from a golang course
