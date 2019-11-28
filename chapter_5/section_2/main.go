@@ -3,8 +3,7 @@ package main
 import "fmt"
 
 type person struct {
-	first string
-	last  string
+	first, last string //you can multi assign here too
 }
 
 type secretAgent struct {
@@ -14,12 +13,12 @@ type secretAgent struct {
 
 func main() {
 	s1 := secretAgent{
-		person{
-			"james",
-			"bond",
+		person: person{
+			first: "james",
+			last:  "bond",
 		},
-		true,
+		ltk: true,
 	}
 	fmt.Println(s1)
-	fmt.Println(s1.first)
+	fmt.Println(s1.first) //we auto destructre the struct
 }
