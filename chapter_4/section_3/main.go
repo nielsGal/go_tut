@@ -12,4 +12,8 @@ func main() {
 	for key := range x {
 		fmt.Println(key)
 	}
+	y := []int{6, 7, 8}
+	z := append(x, y...) //java script like operator
+	// ...T variadic param  T... unpack
+	fmt.Println(z)
 }
