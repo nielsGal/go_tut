@@ -21,5 +21,5 @@ func main() {
 		true,
 	}
 	fmt.Println(s1)
-
+	fmt.Println(s1.first)
 }
