@@ -8,6 +8,8 @@ func main() {
 		`moneypenny_miss`: []string{`James Bond`, `Literature`, `Computer Science`},
 		`no_dr`:           []string{`Being evil`, `Ice cream`, `Sunsets`},
 	}
+	m["doc_oc"] = []string{`spiderman`, `robots`, `nuclear fusion`}
+	delete(m, `bond_james`)
 	for k, v := range m {
 		fmt.Println(k, v)
 	}
