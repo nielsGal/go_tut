@@ -4,8 +4,9 @@ import "fmt"
 
 func main() {
 	ii := []int{5, 6, 7, 8, 9, 10, 12, 14}
-	evenSum := even(sum, ii...)
-	fmt.Println(evenSum)
+	fmt.Println(even(sum, ii...))
+	fmt.Println(odd(sum, ii...))
+	fmt.Println(sum(ii...))
 }
 
 func sum(x ...int) int {
@@ -19,6 +20,16 @@ func even(f func(xi ...int) int, x ...int) int {
 	var yi []int
 	for _, v := range x {
 		if v%2 == 0 {
+			yi = append(yi, v)
+		}
+	}
+	return sum(yi...)
+}
+
+func odd(f func(xi ...int) int, x ...int) int {
+	var yi []int
+	for _, v := range x {
+		if v%2 != 0 {
 			yi = append(yi, v)
 		}
 	}
