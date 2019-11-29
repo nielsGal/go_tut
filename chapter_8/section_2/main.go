@@ -35,4 +35,8 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println(dest)
+
+	for i, v := range dest {
+		fmt.Println(i, v)
+	}
 }
