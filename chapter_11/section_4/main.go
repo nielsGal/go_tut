@@ -20,7 +20,7 @@ func main() {
 	defer foo()
 	_, err = os.Open("myfile.txt")
 	if err != nil {
-		log.Fatalln(err)
+		log.Panicln(err)
 	}
 	fmt.Println("succes")
 }
